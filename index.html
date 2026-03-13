@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="referrer" content="no-referrer">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Forma – Store</title>
+<title>Forma - Store </title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -710,7 +710,7 @@ nav {
         </div>
       </div>
       <div class="product-card-footer">
-        <div class="price-tag">₹699 <span>/ set</span></div>
+        <div class="price-tag">₹549 <span>/ set</span></div>
         <button class="add-btn" onclick="event.stopPropagation(); tryOpenProduct()">→</button>
       </div>
     </div>
@@ -787,8 +787,8 @@ nav {
           </div>
         </div>
         <div class="pp-price-row">
-          <div class="pp-price" id="ppDisplayPrice">₹699</div>
-          <div class="pp-price-og">₹899</div>
+          <div class="pp-price" id="ppDisplayPrice">₹549</div>
+          <div class="pp-price-og">₹669</div>
           <div class="pp-discount-tag" id="ppDiscountTag">22% off</div>
         </div>
       </div>
@@ -858,10 +858,10 @@ nav {
       <div class="co-inline-total" id="coInlineTotal">
         <div>
           <div class="co-label" style="font-size:0.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-weight:600;margin-bottom:0.25rem;"> Eternal Grace Jewellery Set  × <span id="coInlineQty">1</span></div>
-          <div style="font-size:0.82rem;color:var(--muted);" id="coInlineBreakdown">₹699.00 · Free shipping</div>
+          <div style="font-size:0.82rem;color:var(--muted);" id="coInlineBreakdown">₹549.00 · Free shipping</div>
         </div>
         <div style="text-align:right;">
-          <div class="co-inline-price" id="coInlinePrice">₹699.00</div>
+          <div class="co-inline-price" id="coInlinePrice">₹549.00</div>
           <div class="co-inline-disc" id="coInlineDisc" style="display:none;"></div>
         </div>
       </div>
@@ -948,13 +948,13 @@ nav {
           <div class="order-item-name"> Eternal Grace Jewellery Set </div>
           <div class="order-item-meta">  · Qty <span id="coItemQty">1</span></div>
         </div>
-        <div class="order-item-price" id="coItemPrice">₹699.00</div>
+        <div class="order-item-price" id="coItemPrice">₹549.00</div>
       </div>
       <div class="co-summary-rows">
-        <div class="summary-row"><span>Subtotal</span><span id="coSubtotal">₹699.00</span></div>
+        <div class="summary-row"><span>Subtotal</span><span id="coSubtotal">₹549.00</span></div>
         <div class="summary-row"><span>Shipping</span><span style="color:var(--accent);font-weight:600;">Free</span></div>
         <div class="summary-row discount" id="coDiscountRow" style="display:none;"><span id="coDiscountLabel">Discount</span><span id="coDiscountAmt">−$0.00</span></div>
-        <div class="summary-row total"><span>Total</span><span id="coTotal">₹699.00</span></div>
+        <div class="summary-row total"><span>Total</span><span id="coTotal">₹549.00</span></div>
         <div class="co-discount-banner" id="coDiscountBanner"></div>
       </div>
       <button class="co-place-order" onclick="placeOrder()">Place Order →</button>
@@ -1891,7 +1891,7 @@ function openProductPage() {
   document.body.style.overflow = 'hidden';
   document.getElementById('ppWishBtn').classList.toggle('wished', ppWished);
   document.getElementById('ppWishBtn').textContent = ppWished ? '♥' : '♡';
-  document.getElementById('ppDisplayPrice').textContent = '₹699';
+  document.getElementById('ppDisplayPrice').textContent = '₹549';
   document.getElementById('ppDiscountTag').textContent = '22% off';
   // Reset to first image on open
   const _mi = document.getElementById('ppMainImage'); _mi.referrerPolicy = 'no-referrer'; _mi.src = PP_IMAGES[0];
@@ -1911,7 +1911,7 @@ function ppToggleWish() {
   btn.textContent = ppWished ? '♥' : '♡';
   const wlContainer = document.getElementById('wishlistContainer');
   if (ppWished) {
-    wlContainer.innerHTML = `<div class="wishlist-item"><div class="wish-icon"><img src="${PP_IMAGES[0]}" alt=" Eternal Grace Jewellery Set "></div><div class="wish-info"><div class="wish-name"> Eternal Grace Jewellery Set </div><div class="wish-price">₹699</div></div><button class="wish-remove" onclick="ppRemoveWish()">✕</button></div>`;
+    wlContainer.innerHTML = `<div class="wishlist-item"><div class="wish-icon"><img src="${PP_IMAGES[0]}" alt=" Eternal Grace Jewellery Set "></div><div class="wish-info"><div class="wish-name"> Eternal Grace Jewellery Set </div><div class="wish-price">₹549</div></div><button class="wish-remove" onclick="ppRemoveWish()">✕</button></div>`;
     document.getElementById('statWishlist').textContent = '1'; showToast('Added to wishlist ♥');
   } else {
     wlContainer.innerHTML = '<div style="text-align:center;padding:1.5rem;color:var(--muted);font-size:0.85rem;">Your wishlist is empty.</div>';
